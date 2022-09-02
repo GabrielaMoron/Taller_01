@@ -8,3 +8,4 @@ netflix.forEach(function (cap, ep, array) {
 })
 alert(netflix)
 console.log(netflix)
+
