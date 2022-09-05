@@ -1,0 +1,57 @@
+.rojo
+{
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    border: 3px solid #000;
+    background-color: red;
+    border-radius: 8%;
+}
+.azul
+{
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    border: 3px solid rgb(146, 149, 169);
+    background-color: blue;
+    border-radius: 8%;
+}
+.morado
+{
+    border: 3px solid #000;
+    background-color: rgb(125, 49, 207);
+    margin-left: 4%;
+    margin-top: 2%;
+    width: 110px;
+    height: 110px;
+     border-radius:8% ;
+}
+.lila
+{
+    border-radius:8% ;
+    border: 3px solid #000;
+    background-color: rgb(220, 155, 255);
+    margin-left: 4%;
+    margin-top: 2%;
+    width: 110px;
+    height: 110px;
+}
+
+.pantalla
+{
+    float: left;
+    width: 100%;
+    min-height: 42em;
+ 
+}
+body
+{
+    background: #ffff;
+    padding: 8%;
+ 
+
+}
