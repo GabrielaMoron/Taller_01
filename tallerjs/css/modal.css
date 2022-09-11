@@ -1,0 +1,108 @@
+img.card-img-top {
+    width: 43%;
+}
+
+.modal{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    
+    padding-top: 200px;
+    display: none;
+}
+
+.contenidoModal{
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    padding: 1rem;
+
+}
+
+.contenidoModal .form-group {
+    width: 100%;
+}
+
+/*Cerrar modal circulo*/
+.cerrarModalC{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModalC:hover{
+    cursor: pointer;
+}
+
+
+.cerrarModal{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModal:hover{
+    cursor: pointer;
+}
+
+
+/*Cerrar modal triangulo*/
+.cerrarModalT{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModalT:hover{
+    cursor: pointer;
+}
+
+.cerrarModalT2{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModalT2:hover{
+    cursor: pointer;
+}
+
+
+/*Cerrar modal cuadrado*/
+.cerrarModalCu{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModalCu:hover{
+    cursor: pointer;
+}
+
+.cerrarModalCu2{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModalCu2:hover{
+    cursor: pointer;
+}
+
+
+/*Cerrar modal rectangulo*/
+.cerrarModalR{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModalR:hover{
+    cursor: pointer;
+}
+
+.cerrarModalR2{
+    font-size: 2rem;
+    float: right;  
+}
+
+.cerrarModalR2:hover{
+    cursor: pointer;
+}
