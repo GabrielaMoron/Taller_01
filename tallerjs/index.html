@@ -32,6 +32,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Ejecicio 3</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Ejecicio 4</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Ejercicio 5</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ejercicio6">Ejercicio 6</a></li>
                 </ul>
             </div>
         </nav>
@@ -212,154 +213,263 @@
           
             <!-- Ejercicio 5-->
             <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Figuras geometricas</h2>
+              <div class="resume-section-content">
+                  <h2 class="mb-5">Figuras geometricas</h2>
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <img class="card-img-top" src="img/circulo.png" alt="Card image cap"><br><br>
+                            <h5 class="card-title">Circulo</h5>
+                            <button id="perimetroC" href="#" >Perímetro</button>
+                            <button id="areaC" href="#" >Área</button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <img class="card-img-top" src="img/triangulo.png" alt="Card image cap"><br><br>
+                            <h5 class="card-title">Triangulo</h5>
+                            <button id="perimetroT" href="#" >Perímetro</button>
+                            <button id="areaT" href="#" >Área</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="card-body">
-                              <img class="card-img-top" src="img/circulo.png" alt="Card image cap"><br><br>
-                              <h5 class="card-title">Circulo</h5>
-                              <button id="perimetroC" href="#" >Perímetro</button>
-                              <button id="areaC" href="#" >Área</button>
-                            </div>
-                          </div>
-                        </div>
-                        
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="card-body">
-                              <img class="card-img-top" src="img/triangulo.png" alt="Card image cap"><br><br>
-                              <h5 class="card-title">Triangulo</h5>
-                              <button id="perimetroT" href="#" >Perímetro</button>
-                              <button id="areaT" href="#" >Área</button>
-                            </div>
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <img class="card-img-top" src="img/cuadrado.png" alt="Card image cap"><br><br>
+                            <h5 class="card-title">Cuadrado</h5>
+                            <button id="perimetroCu" href="#" >Perímetro</button>
+                            <button id="areaCu"   href="#" >Área</button>
                           </div>
                         </div>
                       </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="card-body">
-                              <img class="card-img-top" src="img/cuadrado.png" alt="Card image cap"><br><br>
-                              <h5 class="card-title">Cuadrado</h5>
-                              <button id="perimetroCu" href="#" >Perímetro</button>
-                              <button id="areaCu"   href="#" >Área</button>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="card-body">
-                              <img class="card-img-top" src="img/rectangulo.png" alt="Card image cap"><br><br>
-                              <h5 class="card-title">Rectangulo</h5>
-                              <button id="perimetroR" href="#" >Perímetro</button>
-                              <button id="areaR" href="#" >Área</button>
-                            </div>
+                      <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <img class="card-img-top" src="img/rectangulo.png" alt="Card image cap"><br><br>
+                            <h5 class="card-title">Rectangulo</h5>
+                            <button id="perimetroR" href="#" >Perímetro</button>
+                            <button id="areaR" href="#" >Área</button>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </header>
-                
-                  <!--Circulo-->
-                    <div id="perimetroCirculo" class="modal">
-                      <div class="contenidoModal">
-                        <span class="cerrarModalC"><i class="fa-solid fa-xmark"></i></span>
-                        <h2>Perímetro de circulo</h2>
-                        <div class="form-group">
-                          <input id="radio" type="number"  placeholder="Ingresa el radio del circulo">
-                          <button id="calcularPC" type="button" >Calcular</button>
-                        </div>
+                  </div>
+                </header>
+              
+                <!--Circulo-->
+                  <div id="perimetroCirculo" class="modal">
+                    <div class="contenidoModal">
+                      <span class="cerrarModalC"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>Perímetro de circulo</h2>
+                      <div class="form-group">
+                        <input id="radio" type="number"  placeholder="Ingresa el radio del circulo">
+                        <button id="calcularPC" type="button" >Calcular</button>
                       </div>
                     </div>
-                
-                    <div id="areaCirculo" class="modal">
-                      <div class="contenidoModal">
-                        <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
-                        <h2>Área de circulo</h2>
-                        <div class="form-group">
-                          <input id="radio" type="text"  placeholder="Ingresa el radio del circulo">
-                          <button id="calcularAC" type="button" >Calcular</button>
-                        </div>
+                  </div>
+              
+                  <div id="areaCirculo" class="modal">
+                    <div class="contenidoModal">
+                      <span class="cerrarModal"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>Área de circulo</h2>
+                      <div class="form-group">
+                        <input id="radio" type="text"  placeholder="Ingresa el radio del circulo">
+                        <button id="calcularAC" type="button" >Calcular</button>
                       </div>
                     </div>
-                
-                    <!--Triangulo-->
-                    <div id="perimetroTriangulo" class="modal">
-                      <div class="contenidoModal">
-                        <span class="cerrarModalT"><i class="fa-solid fa-xmark"></i></span>
-                        <h2>Perímetro de triangulo</h2>
-                        <div class="form-group">
-                          <input id="lado1" type="number"  placeholder="Ingresa el primer lado del triangulo">
-                          <input id="lado2" type="number"  placeholder="Ingresa el segundo lado del triangulo">
-                          <input id="lado3" type="number"  placeholder="Ingresa el tercer lado del triangulo">
-                          <button id="calcularPT" type="button" >Calcular</button>
-                        </div>
+                  </div>
+              
+                  <!--Triangulo-->
+                  <div id="perimetroTriangulo" class="modal">
+                    <div class="contenidoModal">
+                      <span class="cerrarModalT"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>Perímetro de triangulo</h2>
+                      <div class="form-group">
+                        <input id="lado1" type="number"  placeholder="Ingresa el primer lado del triangulo">
+                        <input id="lado2" type="number"  placeholder="Ingresa el segundo lado del triangulo">
+                        <input id="lado3" type="number"  placeholder="Ingresa el tercer lado del triangulo">
+                        <button id="calcularPT" type="button" >Calcular</button>
                       </div>
                     </div>
-                
-                    <div id="areaTriangulo" class="modal">
-                      <div class="contenidoModal">
-                        <span class="cerrarModalT2"><i class="fa-solid fa-xmark"></i></span>
-                        <h2>Área de triangulo</h2>
-                        <div class="form-group">
-                          <input id="baseT" type="text"  placeholder="Ingresa la base del triangulo">
-                          <input id="alturaT" type="text"  placeholder="Ingresa la altura lado del triangulo">
-                          <button id="calcularAT" type="button" >Calcular</button>
-                        </div>
+                  </div>
+              
+                  <div id="areaTriangulo" class="modal">
+                    <div class="contenidoModal">
+                      <span class="cerrarModalT2"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>Área de triangulo</h2>
+                      <div class="form-group">
+                        <input id="baseT" type="text"  placeholder="Ingresa la base del triangulo">
+                        <input id="alturaT" type="text"  placeholder="Ingresa la altura lado del triangulo">
+                        <button id="calcularAT" type="button" >Calcular</button>
                       </div>
                     </div>
-                
-                    <!--Cuadrado-->
-                    <div id="perimetroCuadrado" class="modal">
-                      <div class="contenidoModal">
-                        <span class="cerrarModalCu"><i class="fa-solid fa-xmark"></i></span>
-                        <h2>Perímetro de cuadrado</h2>
-                        <div class="form-group">
-                          <input id="ladoC" type="text"  placeholder="Ingresa el lado del cuadrado">
-                          <button id="calcularPCu" type="button" >Calcular</button>
-                        </div>
+                  </div>
+              
+                  <!--Cuadrado-->
+                  <div id="perimetroCuadrado" class="modal">
+                    <div class="contenidoModal">
+                      <span class="cerrarModalCu"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>Perímetro de cuadrado</h2>
+                      <div class="form-group">
+                        <input id="ladoC" type="text"  placeholder="Ingresa el lado del cuadrado">
+                        <button id="calcularPCu" type="button" >Calcular</button>
                       </div>
                     </div>
-                
-                    <div id="areaCuadrado" class="modal">
-                      <div class="contenidoModal">
-                        <span class="cerrarModalCu2"><i class="fa-solid fa-xmark"></i></span>
-                        <h2>Área de cuadrado</h2>
-                        <div class="form-group">
-                          <input id="ladoCA" type="text"  placeholder="Ingresa el lado del cuadrado">
-                          <button id="calcularACu" type="button" >Calcular</button>
-                        </div>
+                  </div>
+              
+                  <div id="areaCuadrado" class="modal">
+                    <div class="contenidoModal">
+                      <span class="cerrarModalCu2"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>Área de cuadrado</h2>
+                      <div class="form-group">
+                        <input id="ladoCA" type="text"  placeholder="Ingresa el lado del cuadrado">
+                        <button id="calcularACu" type="button" >Calcular</button>
                       </div>
                     </div>
-                
-                     <!--Rectangulo-->
-                     <div id="perimetroRectangulo" class="modal">
-                      <div class="contenidoModal">
-                        <span class="cerrarModalR"><i class="fa-solid fa-xmark"></i></span>
-                        <h2>Perímetro de rectangulo</h2>
-                        <div class="form-group">
-                          <input id="baseR" type="text"  placeholder="Ingresa la base del rectangulo">
-                          <input id="alturaR" type="text"  placeholder="Ingresa la altura lado del rectangulo">
-                          <button id="calcularPR" type="button" >Calcular</button>
-                        </div>
+                  </div>
+              
+                   <!--Rectangulo-->
+                   <div id="perimetroRectangulo" class="modal">
+                    <div class="contenidoModal">
+                      <span class="cerrarModalR"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>Perímetro de rectangulo</h2>
+                      <div class="form-group">
+                        <input id="baseR" type="text"  placeholder="Ingresa la base del rectangulo">
+                        <input id="alturaR" type="text"  placeholder="Ingresa la altura lado del rectangulo">
+                        <button id="calcularPR" type="button" >Calcular</button>
                       </div>
                     </div>
-                
-                    <div id="areaRectangulo" class="modal">
-                      <div class="contenidoModal">
-                        <span class="cerrarModalR2"><i class="fa-solid fa-xmark"></i></span>
-                        <h2>Área de rectangulo</h2>
-                        <div class="form-group">
-                          <input id="baseAR" type="text"  placeholder="Ingresa la base del Rectangulo">
-                          <input id="alturaAR" type="text"  placeholder="Ingresa la altura lado del Rectangulo">
-                          <button id="calcularAR" type="button" >Calcular</button>
-                        </div>
+                  </div>
+              
+                  <div id="areaRectangulo" class="modal">
+                    <div class="contenidoModal">
+                      <span class="cerrarModalR2"><i class="fa-solid fa-xmark"></i></span>
+                      <h2>Área de rectangulo</h2>
+                      <div class="form-group">
+                        <input id="baseAR" type="text"  placeholder="Ingresa la base del Rectangulo">
+                        <input id="alturaAR" type="text"  placeholder="Ingresa la altura lado del Rectangulo">
+                        <button id="calcularAR" type="button" >Calcular</button>
                       </div>
                     </div>
-            </section>
-            
+                  </div>
+          </section>
+          
+         
+          
+          <section class="resume-section" id="ejercicio6">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Figuras geometricas</h2>
+                <div class="row ">
+                  <div class="form-group col-md-6">
+                     
+                    <main>
+                      <form action="" class="formulario" id="formulario">
+                         <!-- Grupo: tipodoc -->
+                         <div class="formulario__grupo" id="grupo__usuario">
+                          <label for="tipodoc" class="formulario__label">Tipo de documento</label>
+                          <div class="formulario__grupo-input">
+                            <select type="text" class="option" class="formulario__input" name="tipodoc" id="tipodoc" placeholder="Seleccione..." required>
+                             <option>Seleccione...</option>
+                              <option >Cedula </option>
+                            <option > Tarjeta de identidad</option>
+                          <option> Cedula extranjera </option></select>
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                          </div>
+                          <p class="formulario__input-error">El campo debe estar lleno</p>
+                        </div>
+                          <!-- Grupo: numdoc -->
+                          <div class="formulario__grupo" id="grupo__usuario">
+                            <label for="numdoc" class="formulario__label">Numero de documento</label>
+                            <div class="formulario__grupo-input">
+                              <input type="text" class="formulario__input" name="numdoc" id="numdoc" minlength="8" maxlength="11">
+                              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El numdoc tiene que ser de 8 a 11 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                          </div>
+                           <!-- Grupo: Nombre -->
+                           <div class="formulario__grupo" id="grupo__nombre">
+                            <label for="nombre" class="formulario__label">Nombre</label>
+                            <div class="formulario__grupo-input">
+                              <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+                              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
+                            <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+                          </div>
+                       
+                      
+                  
+                     
+                  
+                        <!-- Grupo: Contraseña -->
+                        <div class="formulario__grupo" id="grupo__password">
+                          <label for="password" class="formulario__label">Contraseña</label>
+                          <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password" id="password">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                          </div>
+                          <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                        </div>
+                  
+                        <!-- Grupo: Contraseña 2 -->
+                        <div class="formulario__grupo" id="grupo__password2">
+                          <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                          <div class="formulario__grupo-input">
+                            <input type="password" class="formulario__input" name="password2" id="password2">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                          </div>
+                          <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+                        </div>
+                  
+                        <!-- Grupo: Correo Electronico -->
+                        <div class="formulario__grupo" id="grupo__correo">
+                          <label for="correo" class="formulario__label">Correo Electrónico</label>
+                          <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                          </div>
+                          <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                        </div>
+                  
+                        <!-- Grupo: Teléfono -->
+                        <div class="formulario__grupo" id="grupo__telefono">
+                          <label for="telefono" class="formulario__label">Teléfono</label>
+                          <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                          </div>
+                          <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+                        </div>
+                  
+                        <!-- Grupo: Terminos y Condiciones -->
+                        <div class="formulario__grupo" id="grupo__terminos">
+                          <label class="formulario__label">
+                            <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                            Acepto los Terminos y Condiciones
+                          </label>
+                        </div>
+                  
+                        <div class="formulario__mensaje" id="formulario__mensaje">
+                          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                        </div>
+                  
+                        <div class="formulario__grupo formulario__grupo-btn-enviar">
+                          <button type="submit" class="formulario__btn">Enviar</button>
+                          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                        </div>
+                      </form>
+                    </main>
+                  
+        
+      </section>
+
+       
            
         </div>
         <!-- Bootstrap core JS-->
@@ -371,5 +481,6 @@
         <script src="js/ejercicio3.js"></script>
         <script src="js/ejercicio4.js"></script>
         <script src="js/ejercicio5.js"></script>
+        <script src="js/ejercicio6.js"></script>
     </body>
 </html>
