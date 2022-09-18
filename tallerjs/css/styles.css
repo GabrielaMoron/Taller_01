@@ -11360,7 +11360,7 @@ input {
  height: 15%;
   border: none;
   border-radius: 2rem;
-  padding: 1.5%;
+  padding: 2.5%;
   background: #fff;
   font-weight: 600;
   margin-bottom: 8%;
@@ -11638,7 +11638,7 @@ img.card-img-top {
 .formulario {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 20px;
+	column-gap: 50px;
 }
 
 .formulario__label {
@@ -11659,7 +11659,7 @@ main {
 }
 
 .formulario__input {
-	width: 200px;
+	width: 400px;
 	background: #fff;
 	border: 3px solid transparent;
 	border-radius: 2rem;
@@ -11667,6 +11667,28 @@ main {
 	line-height: 45px;
 	padding: 0 40px 0 10px;
 	transition: .3s ease all;
+  margin-left: -2rem;
+}
+
+.option2{
+  width: 400px;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 2rem;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+  margin-left: -1rem;
+
+
+}
+
+
+.option:focus{
+  background-color: black;
+  color:white;
+  border:none;
 }
 
 .formulario__input:focus {
@@ -11676,7 +11698,7 @@ main {
 }
 
 .formulario__input-error {
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 0;
 	display: none;
 }
@@ -11707,9 +11729,9 @@ main {
 .formulario__mensaje {
 	height: 45px;
 	line-height: 45px;
-	background: #F66060;
+	background: red;
 	padding: 0 15px;
-	border-radius: 3px;
+	border-radius: 12px;
 	display: none;
 }
 
@@ -11728,21 +11750,22 @@ main {
 }
 
 .formulario__btn {
-	height: 45px;
-	line-height: 45px;
-	width: 30%;
-	background: #000;
-	color: #fff;
-	font-weight: bold;
-	border: none;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: .1s ease all;
+  margin-left: 9%;
+  position :center;
+   width: 30%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: var(--bs-gray-700);
+  border: none;
+  cursor: pointer;
+margin-bottom: 5%;
 }
 
 .formulario__btn:hover {
 	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
+
 
 .formulario__mensaje-exito {
 	font-size: 14px;
@@ -11775,15 +11798,23 @@ main {
 
 
 /* ----- -----  Mediaqueries ----- ----- */
-@media screen and (max-width: 800px) {
-	.formulario {
+@media screen and  (max-width: 800px) {
+ main{
+  display: grid;
+  justify-content:flex-start;
+
+ }
+  
+  .formulario {
 		grid-template-columns: 1fr;
+   
 	}
 
 	.formulario__grupo-terminos, 
 	.formulario__mensaje,
 	.formulario__grupo-btn-enviar {
 		grid-column: 1;
+
 	}
 
 	.formulario__btn {

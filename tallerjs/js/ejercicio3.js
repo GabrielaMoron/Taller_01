@@ -7,14 +7,14 @@ total.addEventListener('click', function(){
     parseInt(lado1, lado2, lado3);
    
     if(lado1 == lado2 && lado1 == lado3 && lado2 == lado3){       
-        alert(`El triangulo es equilatero`);
+        swal({title:`El triangulo es equilatero`,icon:"info"});
     }
 
     else if(lado1 == lado2 || lado1 == lado3 ||lado2 == lado3){       
-        alert(`El triangulo es isosceles`);
+        swal({title:`El triangulo es isosceles`,icon:"info"});
     }
 
     else if(lado1 != lado2 && lado1 != lado3 ||lado2 != lado3){       
-        alert(`El triangulo es escaleno`);
+        swal({title:`El triangulo es escaleno`,icon:"info"});
     }
 });

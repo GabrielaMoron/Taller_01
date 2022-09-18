@@ -40,9 +40,7 @@ const validarFormulario = (e) => {
 		case "fecha":
 			validarCampo(expresiones.fecha, e.target, 'fecha');
 		break;
-        case "correo":
-			validarCampo(expresiones.correo, e.target, 'correo');
-		break;
+      
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
 			validarPassword2();

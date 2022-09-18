@@ -4,18 +4,22 @@
     longitud.addEventListener('click', function(){
 
             const palabra = document.getElementById('palabra').value;
-
-            window.alert(`La longitud de la palabra "${palabra}" es: ` + palabra.length);
+            swal({
+               title:`La longitud de la palabra ${palabra} es: ` + palabra.length,
+                icon: "success"
+              });
+          
     });
-
 
     let may = document.getElementById('mayus');
 
     may.addEventListener('click', function(){
 
                 const palabra = document.getElementById('palabra').value;
-
-                window.alert(`La palabra "${palabra}" en mayúsculas es ` + palabra.toUpperCase());
+                swal({
+                    title:`La palabra "${palabra}" en mayúsculas es ` + palabra.toUpperCase(),
+                     icon: "success"
+                   });
     });
 
 
@@ -25,7 +29,7 @@
 
                 const palabra = document.getElementById('palabra').value;
 
-                window.alert(`La palabra "${palabra}" en minúscula es ` + palabra.toLowerCase());
+                swal({title:`La palabra "${palabra}" en minúscula es ` + palabra.toLowerCase(), icon: "success"});
     });
 
 
@@ -35,5 +39,5 @@
 
                 const palabra = document.getElementById('palabra').value;
 
-                window.alert(`El primer caracter de la palabra "${palabra}" es ` + palabra.charAt());
+                swal({title:`El primer caracter de la palabra "${palabra}" es ` + palabra.charAt(), icon:"success"});
             });

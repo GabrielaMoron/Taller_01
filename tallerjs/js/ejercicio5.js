@@ -23,7 +23,7 @@ calcularPC.addEventListener("click",()=>{
     const radio=document.getElementById("radio").value;
     parseInt(radio);
     let resultado = radio * 3.1416 * 2;
-    alert(`El perímetro del circulo es ${resultado.toFixed(2)}`);
+swal(`El perímetro del circulo es ${resultado.toFixed(2)}`);
 })
 
 //Area
@@ -51,7 +51,7 @@ calcularAC.addEventListener("click",()=>{
     const radio=document.getElementById("radio").value;
     parseInt(radio);
     let resultado = 3.1416 * (radio *  radio);
-    alert(`El área del circulo es ${resultado.toFixed(2)}`);
+swal(`El área del circulo es ${resultado.toFixed(2)}`);
 })
 
 //Triangulo
@@ -83,7 +83,7 @@ calcularPT.addEventListener("click",()=>{
     let lado3=document.getElementById("lado3").value;
     parseInt(lado1,lado2,lado3);
     let resultado = (parseInt(lado1) + parseInt(lado2) + parseInt(lado3));
-    alert(`El perímetro del triangulo es ${resultado}`);
+swal(`El perímetro del triangulo es ${resultado}`);
 })
 
 
@@ -114,7 +114,7 @@ calcularAT.addEventListener("click",()=>{
     let alturaT=document.getElementById("alturaT").value;
     parseInt(baseT,alturaT);
     let resultado = (baseT * alturaT)/2;
-    alert(`El perímetro del triangulo es ${resultado}`);
+swal(`El perímetro del triangulo es ${resultado}`);
 })
 
 //Cuadrado
@@ -143,7 +143,7 @@ calcularPCu.addEventListener("click",()=>{
     let ladoC=document.getElementById("ladoC").value;
     parseInt(ladoC);
     let resultado = ladoC * 4;
-    alert(`El perímetro del cuadrado es ${resultado}`);
+swal(`El perímetro del cuadrado es ${resultado}`);
 })
 
 
@@ -172,7 +172,7 @@ calcularACu.addEventListener("click",()=>{
     let ladoCA=document.getElementById("ladoCA").value;
     parseInt(ladoCA);
     let resultado = ladoCA * ladoCA;
-    alert(`El área del triangulo es ${resultado}`);
+swal(`El área del triangulo es ${resultado}`);
 })
 
 //Rectangulo
@@ -202,7 +202,7 @@ calcularPR.addEventListener("click",()=>{
     let alturaR=document.getElementById("alturaR").value;
     parseInt(baseR,alturaR);
     let resultado = 2 *(parseInt(baseR) + parseInt(alturaR));
-    alert(`El perímetro del rectangulo es ${resultado}`);
+swal(`El perímetro del rectangulo es ${resultado}`);
 })
 
 
@@ -233,5 +233,5 @@ calcularAR.addEventListener("click",()=>{
     let alturaAR=document.getElementById("alturaAR").value;
     parseInt(baseAR,alturaAR);
     let resultado = baseAR * alturaAR;
-    alert(`El perímetro del triangulo es ${resultado}`);
+swal(`El perímetro del triangulo es ${resultado}`);
 })

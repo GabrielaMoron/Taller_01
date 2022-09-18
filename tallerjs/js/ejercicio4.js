@@ -7,7 +7,7 @@ comprobar.addEventListener('click', function () {
     parseInt(a, b, c);
 
         if (a == 1 && b == 6 && c == 11) {
-        alert(`La respuesta es correcta`);
+       swal({title:`La respuesta es correcta`,icon:"success"})
         }
         else if (a != 1 && b != 6 && c == 11) {
         alert(`La respuesta es incorrecta`);
@@ -32,98 +32,98 @@ comprobar.addEventListener('click', function () {
 
 
         else if (a == 2 && b == 7 && c == 12) {
-        alert('La respuesta es correcta')
+    swal({title:`La respuesta es correcta`,icon:"success"})
         }
         else if (a != 2 && b != 7 && c == 12) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 2 && b != 7 && c != 12) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a != 2 && b == 7 && c != 12) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 2 && b == 7 && c != 12) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a != 2 && b == 7 && c == 12) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 2 && b != 7 && c == 12) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
 
 
         
         else if (a == 3 && b == 8 && c == 13) {
-            alert('La respuesta es correcta')
+        swal({title:`La respuesta es correcta`,icon:"success"})
         }
         else if (a != 3 && b != 8 && c == 13) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 3 && b != 8 && c != 13) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a !== 3 && b == 8 && c != 13) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 3 && b == 8 && c != 13) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a != 3 && b == 8 && c == 13) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 3 && b != 8 && c == 13) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
 
    
 
 
         else if (a == 4 && b == 9 && c == 14) {
-            alert('La respuesta es correcta')
+        swal({title:`La respuesta es correcta`,icon:"success"})
         }
         else if (a != 4 && b != 9 && c == 14) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 4 && b != 9 && c != 14) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a != 4 && b == 9 && c != 14) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 4 && b == 9 && c != 14) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a != 4 && b == 9 && c == 14) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 4 && b != 9 && c == 14) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
 
 
    
         else if (a == 5 && b == 10 && c == 15) {
-            alert('La respuesta es correcta')
+        swal({title:`La respuesta es correcta`,icon:"success"})
         }
         else if (a != 5 && b != 10 && c == 15) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 5 && b != 10 && c != 15) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a != 5 && b == 10 && c != 15) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 5 && b == 10 && c != 15) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a != 5 && b == 10 && c == 15) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 5 && b != 10 && c == 15) {
-            alert('La respuesta es incorrecta')
+        swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
 
         
