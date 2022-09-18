@@ -2,29 +2,35 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = {
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+    numdoc: /^\d{8,11}$/,// 8 a 11 numeros.
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+	apellido: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras, numeros, guion y guion_bajo
 	password: /^.{4,12}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
+
 }
 
 const campos = {
-	usuario: false,
+	numdoc:false,
 	nombre: false,
+	apellido: false,
 	password: false,
 	correo: false,
-	telefono: false
+
 }
 
 const validarFormulario = (e) => {
 	switch (e.target.name) {
-		case "usuario":
-			validarCampo(expresiones.usuario, e.target, 'usuario');
+		case "numdoc":
+			validarCampo(expresiones.usuario, e.target, 'numdoc');
 		break;
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
+		case "apellido":
+			validarCampo(expresiones.telefono, e.target, 'apellido');
+		break;
+	
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
 			validarPassword2();
@@ -34,11 +40,8 @@ const validarFormulario = (e) => {
 		break;
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
-		break;
-		case "telefono":
-			validarCampo(expresiones.telefono, e.target, 'telefono');
-		break;
-	}
+		break }
+		
 }
 
 const validarCampo = (expresion, input, campo) => {
@@ -76,7 +79,7 @@ const validarPassword2 = () => {
 		document.querySelector(`#grupo__password2 i`).classList.remove('fa-times-circle');
 		document.querySelector(`#grupo__password2 i`).classList.add('fa-check-circle');
 		document.querySelector(`#grupo__password2 .formulario__input-error`).classList.remove('formulario__input-error-activo');
-		campos['password'] = true;
+		campos['password2'] = true;
 	}
 }
 
@@ -89,7 +92,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const terminos = document.getElementById('terminos');
-	if(campos.usuario && campos.nombre && campos.password && campos.correo && campos.telefono && terminos.checked ){
+	if(campos.numdoc && campos.apellido && campos.nombre && campos.password && campos.correo  && terminos.checked ){
 		formulario.reset();
 
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

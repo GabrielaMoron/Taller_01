@@ -1,13 +1,13 @@
 let perimetroC=document.getElementById("perimetroC");
 let perimetroCirculo=document.getElementById("perimetroCirculo");
-let cerrarModalC=document.querySelector(".cerrarModalC");
+let cerrarC=document.querySelector(".cerrarC");
 
 
 perimetroC.addEventListener("click",()=>{
     perimetroCirculo.style.display="block";
 })
 
-cerrarModalC.addEventListener("click",()=>{
+cerrarC.addEventListener("click",()=>{
     perimetroCirculo.style.display="none"; 
 })
 
@@ -17,25 +17,25 @@ window.addEventListener("click",(e)=>{
     }
 })
 
-const calcularPC=document.getElementById("calcularPC");
+const contarPC=document.getElementById("contarPC");
 
-calcularPC.addEventListener("click",()=>{
+contarPC.addEventListener("click",()=>{
     const radio=document.getElementById("radio").value;
     parseInt(radio);
     let resultado = radio * 3.1416 * 2;
-swal(`El perímetro del circulo es ${resultado.toFixed(2)}`);
+    swal(`El perímetro del circulo es ${resultado.toFixed(2)}`);
 })
 
 //Area
 let areaC=document.getElementById("areaC");
 let areaCirculo=document.getElementById("areaCirculo");
-let cerrarModal=document.querySelector(".cerrarModal");
+let cerrar=document.querySelector(".cerrar");
 
 areaC.addEventListener("click",()=>{
     areaCirculo.style.display="block";
 })
 
-cerrarModal.addEventListener("click",()=>{
+cerrar.addEventListener("click",()=>{
     areaCirculo.style.display="none"; 
 })
 
@@ -45,26 +45,26 @@ window.addEventListener("click",(e)=>{
     }
 })
 
-const calcularAC=document.getElementById("calcularAC");
+const contarAC=document.getElementById("contarAC");
 
-calcularAC.addEventListener("click",()=>{
+contarAC.addEventListener("click",()=>{
     const radio=document.getElementById("radio").value;
     parseInt(radio);
     let resultado = 3.1416 * (radio *  radio);
-swal(`El área del circulo es ${resultado.toFixed(2)}`);
+    swal(`El área del circulo es ${resultado.toFixed(2)}`);
 })
 
 //Triangulo
 //perimetro
 let perimetroT=document.getElementById("perimetroT");
 let perimetroTriangulo=document.getElementById("perimetroTriangulo");
-let cerrarModalT=document.querySelector(".cerrarModalT");
+let cerrarT=document.querySelector(".cerrarT");
 
 perimetroT.addEventListener("click",()=>{
     perimetroTriangulo.style.display="block";
 })
 
-cerrarModalT.addEventListener("click",()=>{
+cerrarT.addEventListener("click",()=>{
     perimetroTriangulo.style.display="none"; 
 })
 
@@ -75,28 +75,28 @@ window.addEventListener("click",(e)=>{
 })
 
 
-const calcularPT=document.getElementById("calcularPT");
+const contarPT=document.getElementById("contarPT");
 
-calcularPT.addEventListener("click",()=>{
+contarPT.addEventListener("click",()=>{
     let lado1=document.getElementById("lado1").value;
     let lado2=document.getElementById("lado2").value;
     let lado3=document.getElementById("lado3").value;
     parseInt(lado1,lado2,lado3);
     let resultado = (parseInt(lado1) + parseInt(lado2) + parseInt(lado3));
-swal(`El perímetro del triangulo es ${resultado}`);
+    swal(`El perímetro del triangulo es ${resultado}`);
 })
 
 
 //Area
 let areaT=document.getElementById("areaT");
 let areaTriangulo=document.getElementById("areaTriangulo");
-let cerrarModalT2=document.querySelector(".cerrarModalT2");
+let cerrarT2=document.querySelector(".cerrarT2");
 
 areaT.addEventListener("click",()=>{
     areaTriangulo.style.display="block";
 })
 
-cerrarModalT2.addEventListener("click",()=>{
+cerrarT2.addEventListener("click",()=>{
     areaTriangulo.style.display="none"; 
 })
 
@@ -107,27 +107,27 @@ window.addEventListener("click",(e)=>{
 })
 
 
-const calcularAT=document.getElementById("calcularAT");
+const contarAT=document.getElementById("contarAT");
 
-calcularAT.addEventListener("click",()=>{
+contarAT.addEventListener("click",()=>{
     let baseT=document.getElementById("baseT").value;
     let alturaT=document.getElementById("alturaT").value;
     parseInt(baseT,alturaT);
     let resultado = (baseT * alturaT)/2;
-swal(`El perímetro del triangulo es ${resultado}`);
+    swal(`El perímetro del triangulo es ${resultado}`);
 })
 
 //Cuadrado
 //perimetro
 let perimetroCu=document.getElementById("perimetroCu");
 let perimetroCuadrado=document.getElementById("perimetroCuadrado");
-let cerrarModalCu=document.querySelector(".cerrarModalCu");
+let cerrarCu=document.querySelector(".cerrarCu");
 
 perimetroCu.addEventListener("click",()=>{
     perimetroCuadrado.style.display="block";
 })
 
-cerrarModalCu.addEventListener("click",()=>{
+cerrarCu.addEventListener("click",()=>{
     perimetroCuadrado.style.display="none"; 
 })
 
@@ -137,26 +137,26 @@ window.addEventListener("click",(e)=>{
     }
 })
 
-const calcularPCu=document.getElementById("calcularPCu");
+const contarPCu=document.getElementById("contarPCu");
 
-calcularPCu.addEventListener("click",()=>{
+contarPCu.addEventListener("click",()=>{
     let ladoC=document.getElementById("ladoC").value;
     parseInt(ladoC);
     let resultado = ladoC * 4;
-swal(`El perímetro del cuadrado es ${resultado}`);
+    swal(`El perímetro del cuadrado es ${resultado}`);
 })
 
 
 //Area
 let areaCu=document.getElementById("areaCu");
 let areaCuadrado=document.getElementById("areaCuadrado");
-let cerrarModalCu2=document.querySelector(".cerrarModalCu2");
+let cerrarCu2=document.querySelector(".cerrarCu2");
 
 areaCu.addEventListener("click",()=>{
     areaCuadrado.style.display="block";
 })
 
-cerrarModalCu2.addEventListener("click",()=>{
+cerrarCu2.addEventListener("click",()=>{
     areaCuadrado.style.display="none"; 
 })
 
@@ -166,26 +166,26 @@ window.addEventListener("click",(e)=>{
     }
 })
 
-const calcularACu=document.getElementById("calcularACu");
+const contarACu=document.getElementById("contarACu");
 
-calcularACu.addEventListener("click",()=>{
+contarACu.addEventListener("click",()=>{
     let ladoCA=document.getElementById("ladoCA").value;
     parseInt(ladoCA);
     let resultado = ladoCA * ladoCA;
-swal(`El área del triangulo es ${resultado}`);
+    swal(`El área del triangulo es ${resultado}`);
 })
 
 //Rectangulo
 //perimetro
 let perimetroR=document.getElementById("perimetroR");
 let perimetroRectangulo=document.getElementById("perimetroRectangulo");
-let cerrarModalR=document.querySelector(".cerrarModalR");
+let cerrarR=document.querySelector(".cerrarR");
 
 perimetroR.addEventListener("click",()=>{
     perimetroRectangulo.style.display="block";
 })
 
-cerrarModalR.addEventListener("click",()=>{
+cerrarR.addEventListener("click",()=>{
     perimetroRectangulo.style.display="none"; 
 })
 
@@ -195,14 +195,14 @@ window.addEventListener("click",(e)=>{
     }
 })
 
-const calcularPR=document.getElementById("calcularPR");
+const contarPR=document.getElementById("contarPR");
 
-calcularPR.addEventListener("click",()=>{
+contarPR.addEventListener("click",()=>{
     let baseR=document.getElementById("baseR").value;
     let alturaR=document.getElementById("alturaR").value;
     parseInt(baseR,alturaR);
     let resultado = 2 *(parseInt(baseR) + parseInt(alturaR));
-swal(`El perímetro del rectangulo es ${resultado}`);
+    swal(`El perímetro del rectangulo es ${resultado}`);
 })
 
 
@@ -210,13 +210,13 @@ swal(`El perímetro del rectangulo es ${resultado}`);
 //Area
 let areaR=document.getElementById("areaR");
 let areaRectangulo=document.getElementById("areaRectangulo");
-let cerrarModalR2=document.querySelector(".cerrarModalR2");
+let cerrarR2=document.querySelector(".cerrarR2");
 
 areaR.addEventListener("click",()=>{
     areaRectangulo.style.display="block";
 })
 
-cerrarModalR2.addEventListener("click",()=>{
+cerrarR2.addEventListener("click",()=>{
     areaRectangulo.style.display="none"; 
 })
 
@@ -226,12 +226,12 @@ window.addEventListener("click",(e)=>{
     }
 })
 
-const calcularAR=document.getElementById("calcularAR");
+const contarAR=document.getElementById("contarAR");
 
-calcularAR.addEventListener("click",()=>{
+contarAR.addEventListener("click",()=>{
     let baseAR=document.getElementById("baseAR").value;
     let alturaAR=document.getElementById("alturaAR").value;
     parseInt(baseAR,alturaAR);
     let resultado = baseAR * alturaAR;
-swal(`El perímetro del triangulo es ${resultado}`);
+    swal(`El perímetro del triangulo es ${resultado}`);
 })

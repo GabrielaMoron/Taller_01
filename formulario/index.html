@@ -13,7 +13,7 @@
 		<form action="" class="formulario" id="formulario">
 			 <!--Grupo tipo documento-->
 			 <div class="formulario__grupo" id="grupo__tipoD">
-				<select class="form-control formulario__input" id="td" required>
+				<select class="form-control formulario__input" class="option2" id="td" required>
 					<option value="">Tipo de documento</option>
 					<option value="1">TI</option>
 					<option value="2">CC</option>
@@ -21,17 +21,18 @@
 			</div>
 
 			<!--Grupo num documento-->
-			<div class="formulario__grupo" id="grupo__numD">
-				<div class="formulario__grupo-input">
-					<input type="text" class="form-control formulario__input" id="nd" type="number"
-						placeholder="Número de documento" minlength="8" maxlength="10">
-					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+		
 
-					<p class="formulario__input-error">El número de documento tiene que ser de 10 dígitos y solo
-						puede contener numeros.</p>
+				<!-- Grupo: Nombre -->
+				<div class="formulario__grupo" id="grupo__numdoc">
+			
+					<div class="formulario__grupo-input">
+						<input type="text" class="form-control formulario__input" name="numdoc" id="numdoc" placeholder="numdoc">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El nombre tiene que ser de 4 a 16 dígitos</p>
 				</div>
-			</div>
-
+	
 
 			<!-- Grupo: Nombre -->
 			<div class="formulario__grupo" id="grupo__nombre">
