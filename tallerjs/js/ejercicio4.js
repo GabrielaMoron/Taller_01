@@ -10,22 +10,22 @@ comprobar.addEventListener('click', function () {
        swal({title:`La respuesta es correcta`,icon:"success"})
         }
         else if (a != 1 && b != 6 && c == 11) {
-        alert(`La respuesta es incorrecta`);
+         swal({title:`La respuesta es incorrecta `,icon:"error"})
         }
         else if (a == 1 && b != 6 && c != 11) {
-            alert(`La respuesta es incorrecta`);
+             swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 1 && b != 6 && c == 11) {
-            alert(`La respuesta es incorrecta`);
+             swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 1 && b == 6 && c != 11) {
-            alert(`La respuesta es incorrecta`);
+             swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a == 1 && b == 6 && c != 11) {
-            alert(`La respuesta es incorrecta`);
+             swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
         else if (a != 1 && b == 6 && c == 11) {
-            alert(`La respuesta es incorrecta`);
+             swal({title:`La respuesta es incorrecta`,icon:"error"})
         }
     
 

@@ -5,7 +5,7 @@ const inputs = document.querySelectorAll('#formulario input');
 
 const expresiones = 
 {
-	numdoc: /^\d{8,10}$/, // 7 a 14 numeros.
+	numdoc: /^\d{8,10}$/, // 8 a 10 numeros.
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
 	fecha: /^(?:3[01]|[12][0-9]|0?[1-9])([\-/.])(0?[1-9]|1[1-2])\1\d{4}$/, //Formato de fecha (dd/MM/YYYY)
 	password: /^.{4,12}$/, // 4 a 12 digitos.
